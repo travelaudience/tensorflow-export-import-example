@@ -57,7 +57,6 @@ estimator.train(input_fn=input_fn(paths), steps=None)
 
 
 # Export our model
-feature_spec = tf.feature_column.make_parse_example_spec(feature_columns)
 columns = [('hour', tf.int64),
            ('domain', tf.string),
            ('device_type', tf.string)]
